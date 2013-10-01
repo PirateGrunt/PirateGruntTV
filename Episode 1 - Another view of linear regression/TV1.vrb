@@ -1,0 +1,22 @@
+\begin{knitrout}
+\definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
+\begin{alltt}
+\hlstd{optimFit} \hlkwb{=} \hlkwd{optim}\hlstd{(}\hlkwc{par} \hlstd{=} \hlkwd{c}\hlstd{(}\hlnum{4}\hlstd{,} \hlnum{1}\hlstd{,} \hlnum{1}\hlstd{),} \hlkwc{fn} \hlstd{= lnLike3,}
+    \hlkwc{control} \hlstd{=} \hlkwd{list}\hlstd{(}\hlkwc{fnscale} \hlstd{=} \hlopt{-}\hlnum{1}\hlstd{),} \hlkwc{Y} \hlstd{= Y,}
+    \hlkwc{X} \hlstd{= X)}
+\hlstd{optimFit}\hlopt{$}\hlstd{par[}\hlnum{1}\hlopt{:}\hlnum{2}\hlstd{]}
+\end{alltt}
+\begin{verbatim}
+## [1] 4.404 1.509
+\end{verbatim}
+\begin{alltt}
+\hlstd{lmFit} \hlkwb{=} \hlkwd{lm}\hlstd{(Y} \hlopt{~} \hlnum{1} \hlopt{+} \hlstd{X)}
+\hlstd{lmFit}\hlopt{$}\hlstd{coefficients}
+\end{alltt}
+\begin{verbatim}
+## (Intercept)           X
+##       4.406       1.509
+\end{verbatim}
+\end{kframe}
+\end{knitrout}
+

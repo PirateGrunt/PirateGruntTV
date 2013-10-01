@@ -1,0 +1,24 @@
+\documentclass[xcolor=dvipsnames]{beamer}
+%%\usepackage[dvipsnames]{xcolor}
+
+\usefonttheme[onlymath]{serif}
+
+\setbeamercolor{title}{fg=black}
+\setbeamercolor{frametitle}{fg=black}
+
+\setbeamertemplate{itemize items}[circle] 
+\setbeamercolor{itemize item}{fg=black} 
+\begin{document}
+
+\title{PirateGruntTV}
+\subtitle{Episode 1: Introduction}
+\author{Brian A. Fannin}
+
+\maketitle
+
+\begin{frame} 
+  Coursera
+\end{frame}
+
+
+\end{document}
